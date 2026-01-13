@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carta para Valeria</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: radial-gradient(circle at top, #2a0a3d, #0b0014);
+        color: #f5e9ff;
+        font-family: 'Playfair Display', serif;
+        min-height: 100vh;
+    }
+
+    .contenedor {
+        max-width: 850px;
+        margin: auto;
+        padding: 60px 40px 100px;
+        animation: aparecer 3s ease;
+    }
+
+    @keyframes aparecer {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .titulo {
+        text-align: center;
+        font-family: 'Great Vibes', cursive;
+        font-size: 70px;
+        color: #d7b3ff;
+        margin-bottom: 10px;
+    }
+
+    .fecha {
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: #caa6ff;
+        margin-bottom: 50px;
+    }
+
+    .carta p {
+        font-size: 20px;
+        line-height: 1.9;
+        margin-bottom: 28px;
+        text-align: justify;
+    }
+
+    .nombre {
+        color: #e2c8ff;
+        font-weight: 600;
+    }
+
+    .firma {
+        margin-top: 70px;
+        text-align: right;
+        font-size: 22px;
+    }
+
+    .firma span {
+        display: block;
+        font-family: 'Great Vibes', cursive;
+        font-size: 48px;
+        color: #ddbfff;
+        margin-top: 15px;
+    }
+
+    .musica {
+        margin-top: 90px;
+        text-align: center;
+    }
+
+    .musica p {
+        font-size: 18px;
+        color: #cfaeff;
+        margin-bottom: 20px;
+    }
+
+    iframe {
+        border-radius: 16px;
+        box-shadow: 0 0 30px rgba(180,120,255,0.35);
+    }
+
+    .corazon {
+        position: fixed;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        color: #d9b6ff;
+        animation: latido 1.8s infinite;
+    }
+
+    @keyframes latido {
+        0%,100% { transform: translateX(-50%) scale(1); }
+        50% { transform: translateX(-50%) scale(1.2); }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <div class="titulo">Para Ti</div>
+    <div class="fecha">Lunes 12 de enero de 2026 · Noche</div>
+
+    <div class="carta">
+        <p>Amor mío,</p>
+
+        <p>
+            Esta noche no es una noche cualquiera. Es una de esas noches en las que el silencio se vuelve profundo, en las que el mundo parece ir más lento, y en las que mi corazón solo sabe pronunciar tu nombre. Bajo este cielo oscuro, lleno de estrellas que parecen observarlo todo, quiero dejarte estas palabras que nacen directamente de mi alma.
+        </p>
+
+        <p>
+            Desde que llegaste a mi vida, <span class="nombre">Valeria Isabel Petro Villazón</span>, todo cambió sin que yo lo notara de inmediato. Empezaste siendo una presencia suave, luego una emoción constante, y hoy eres ese pensamiento que nunca se va, ese latido que siempre está ahí, recordándome que amar así es un privilegio.
+        </p>
+
+        <p>
+            Te pienso esta noche con una intensidad distinta. No solo te extraño, te siento. Te siento en la calma, en el deseo, en la esperanza. Te siento incluso cuando cierro los ojos y el mundo desaparece, porque ahí sigues tú, intacta, hermosa, real.
+        </p>
+
+        <p>
+            Amarte es una decisión que tomo todos los días sin esfuerzo. Es elegirte incluso en la distancia, incluso en el silencio. Es desear tu felicidad antes que cualquier otra cosa. Es querer cuidarte, protegerte, acompañarte y construir algo verdadero contigo, paso a paso, sin miedo.
+        </p>
+
+        <p>
+            Si supieras cuánto anhelo estar a tu lado esta noche… mirarte, abrazarte, sentir que el tiempo se detiene cuando nuestras almas se encuentran. Pero mientras tanto, dejo mi amor aquí, escrito, sincero, eterno, esperando llegar a ti como un susurro suave al corazón.
+        </p>
+
+        <p>
+            No prometo perfección, pero sí un amor honesto, profundo y constante. Un amor que crece, que aprende, que permanece. Un amor que no huye, que no se apaga, que no se cansa.
+        </p>
+
+        <p>
+            Esta noche, mientras el mundo duerme, mi amor por ti sigue despierto. Late por ti. Sueña contigo. Y te elige, una y otra vez.
+        </p>
+    </div>
+
+    <div class="firma">
+        Con todo mi amor,
+        <span>Para ti, siempre</span>
+    </div>
+
+    <div class="musica">
+        <p>Esta canción suena mientras lees estas palabras…</p>
+        <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/xbO2C3pv0T0?autoplay=1&loop=1"
+        allow="autoplay; encrypted-media"
+        allowfullscreen></iframe>
+    </div>
+
+</div>
+
+<div class="corazon">❤</div>
+
+</body>
+</html>
