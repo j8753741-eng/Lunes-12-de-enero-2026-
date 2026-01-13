@@ -2,176 +2,172 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Una noche para ti</title>
+<title>Para ti, esta noche</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Allura&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&family=Italianno&display=swap" rel="stylesheet">
 
 <style>
-    body{
-        margin:0;
-        padding:0;
-        background: linear-gradient(180deg,#07000f,#1a062d,#0b0016);
-        color:#f3eaff;
-        font-family:'Cormorant Garamond', serif;
-    }
+body{
+    margin:0;
+    background:#030108;
+    color:#f2eaff;
+    font-family:'Libre Baskerville', serif;
+}
 
-    .envoltura{
-        max-width:900px;
-        margin:auto;
-        padding:40px 50px 120px;
-    }
+.apertura{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+}
 
-    .encabezado{
-        text-align:center;
-        margin-bottom:50px;
-        animation: bajar 2.5s ease;
-    }
+.apertura h1{
+    font-family:'Italianno', cursive;
+    font-size:76px;
+    color:#e6cfff;
+    margin-bottom:15px;
+}
 
-    @keyframes bajar{
-        from{opacity:0; transform:translateY(-30px);}
-        to{opacity:1; transform:translateY(0);}
-    }
+.apertura span{
+    font-size:14px;
+    letter-spacing:3px;
+    color:#c9b0ff;
+    margin-bottom:35px;
+}
 
-    .titulo{
-        font-family:'Allura', cursive;
-        font-size:78px;
-        color:#e3c9ff;
-        margin-bottom:10px;
-    }
+iframe{
+    border-radius:14px;
+    box-shadow:0 0 40px rgba(180,120,255,0.45);
+}
 
-    .fecha{
-        font-size:15px;
-        letter-spacing:3px;
-        color:#c7a9ff;
-    }
+.texto{
+    max-width:820px;
+    margin:120px auto;
+    padding:0 30px 120px;
+}
 
-    .musica{
-        margin:50px 0 80px;
-        text-align:center;
-    }
+.parrafo{
+    font-size:21px;
+    line-height:2.1;
+    margin-bottom:38px;
+    opacity:0;
+    transform:translateY(25px);
+    transition:all 1.4s ease;
+    text-align:justify;
+}
 
-    .musica p{
-        font-size:18px;
-        margin-bottom:18px;
-        color:#d6bcff;
-        font-style:italic;
-    }
+.parrafo.visible{
+    opacity:1;
+    transform:translateY(0);
+}
 
-    iframe{
-        border-radius:18px;
-        box-shadow:0 0 35px rgba(190,140,255,0.4);
-    }
+.firma{
+    margin-top:120px;
+    text-align:center;
+    font-size:20px;
+}
 
-    .carta{
-        animation: aparecer 3s ease;
-    }
-
-    @keyframes aparecer{
-        from{opacity:0;}
-        to{opacity:1;}
-    }
-
-    .carta p{
-        font-size:22px;
-        line-height:2;
-        margin-bottom:32px;
-        text-align:justify;
-    }
-
-    .nombre{
-        color:#edd8ff;
-        font-weight:600;
-    }
-
-    .cierre{
-        margin-top:90px;
-        text-align:center;
-        font-size:22px;
-    }
-
-    .cierre span{
-        display:block;
-        margin-top:20px;
-        font-family:'Allura', cursive;
-        font-size:52px;
-        color:#e7cfff;
-    }
-
-    .latido{
-        position:fixed;
-        bottom:25px;
-        right:25px;
-        font-size:26px;
-        animation:pulso 1.6s infinite;
-        color:#e0bfff;
-    }
-
-    @keyframes pulso{
-        0%,100%{transform:scale(1);}
-        50%{transform:scale(1.25);}
-    }
+.firma span{
+    display:block;
+    margin-top:18px;
+    font-family:'Italianno', cursive;
+    font-size:54px;
+    color:#e9d6ff;
+}
 </style>
 </head>
 
 <body>
 
-<div class="envoltura">
+<section class="apertura">
+    <h1>Esta noche</h1>
+    <span>Lunes 12 de enero de 2026</span>
 
-    <div class="encabezado">
-        <div class="titulo">Esta noche es tuya</div>
-        <div class="fecha">Lunes 12 de enero de 2026 · Noche</div>
+    <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/xbO2C3pv0T0?autoplay=1&loop=1"
+    allow="autoplay; encrypted-media"
+    allowfullscreen></iframe>
+</section>
+
+<section class="texto">
+
+    <div class="parrafo">Amor mío,</div>
+
+    <div class="parrafo">
+    Esta noche del lunes 12 de enero de 2026, cuando la oscuridad abraza lentamente al mundo y las estrellas parecen encenderse solo para ser testigos de lo que siento, quiero quedarme aquí, escribiéndote sin prisa, dejando que cada palabra nazca desde lo más profundo de mi corazón. Porque hay amores que se viven, pero también hay amores que necesitan ser escritos para no desbordarse, y el mío por ti es así: inmenso, intenso, imposible de callar.
     </div>
 
-    <div class="musica">
-        <p>Deja que esta canción acompañe cada palabra…</p>
-        <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/xbO2C3pv0T0?autoplay=1&loop=1"
-        allow="autoplay; encrypted-media"
-        allowfullscreen></iframe>
+    <div class="parrafo">
+    Desde que llegaste a mi vida, Valeria Isabel Petro Villazón, algo dentro de mí cambió para siempre. No fue un cambio brusco, fue suave, casi imperceptible, como el amanecer que llega sin hacer ruido y de pronto lo ilumina todo. Empezaste siendo una presencia bonita, luego una necesidad dulce, y sin darme cuenta te convertiste en mi pensamiento más constante, en mi refugio favorito, en la persona a la que mi corazón busca incluso cuando no se lo pido.
     </div>
 
-    <div class="carta">
-
-        <p>Amor mío,</p>
-
-        <p>
-            Esta noche el mundo parece distinto. El silencio es más profundo, el aire más lento, y mi corazón más honesto que nunca. Es una de esas noches en las que no quiero dormir sin antes decirte todo lo que siento, aunque tenga que hacerlo con palabras escritas y no con mis brazos alrededor de ti.
-        </p>
-
-        <p>
-            Desde que llegaste a mi vida, <span class="nombre">Valeria Isabel Petro Villazón</span>, aprendí que el amor no siempre llega haciendo ruido. A veces entra despacio, se acomoda sin pedir permiso y, cuando uno se da cuenta, ya lo ha cambiado todo. Así llegaste tú: suave, real, inevitable.
-        </p>
-
-        <p>
-            Esta noche te pienso más de lo normal. Te pienso en la calma que me das, en la paz que nace cuando pronuncio tu nombre, en la forma en la que incluso la distancia se vuelve pequeña cuando te siento cerca del corazón. No es solo extrañarte… es necesitarte de una forma profunda y sincera.
-        </p>
-
-        <p>
-            Amarte es algo que sucede incluso cuando no lo intento. Es despertarme y pensarte, es imaginarte en mis planes, es desearte tranquilidad cuando el mundo pesa. Amarte es elegirte sin dudas, sin condiciones, sin medias tintas. Es querer caminar contigo incluso cuando el camino no sea perfecto.
-        </p>
-
-        <p>
-            Esta noche quiero confesarte que no te amo de una forma superficial. Te amo con intención, con deseo de permanencia, con ganas de construir algo que no se rompa con el tiempo. Te amo con paciencia, con ternura, con una pasión que no grita, pero que nunca se apaga.
-        </p>
-
-        <p>
-            Si pudiera pedir un deseo ahora mismo, sería simple y eterno: estar a tu lado, mirarte en silencio, sentir que el mundo se detiene porque no hace falta nada más. Pero mientras ese momento llega, dejo mi amor aquí, escrito, sincero, esperando encontrarte.
-        </p>
-
-        <p>
-            Que nunca dudes de esto: hay un corazón que late por ti incluso en la noche más silenciosa, que te piensa con cuidado, que te ama con verdad. Un corazón que, aun en la distancia, te elige.
-        </p>
-
+    <div class="parrafo">
+    Esta noche te pienso de una forma distinta. No solo te extraño: te siento. Te siento en cada latido que se acelera, en cada silencio que pronuncia tu nombre, en cada recuerdo que se me cuela sin avisar. Te siento cuando cierro los ojos y mi mente dibuja tu rostro con una precisión que asombra, como si el amor hubiese aprendido tus rasgos de memoria.
     </div>
 
-    <div class="cierre">
-        Con todo lo que soy,
-        <span>para ti, siempre</span>
+    <div class="parrafo">
+    Amarte no es solo decir que te amo. Amarte es pensarte incluso cuando estoy distraído, es sonreír sin razón aparente porque algo me recuerda a ti, es imaginar futuros que siempre te incluyen. Amarte es desear tu paz antes que cualquier otra cosa, es querer verte crecer, brillar, alcanzar todo lo que sueñas, aun cuando eso implique esperar, aprender, madurar.
     </div>
 
-</div>
+    <div class="parrafo">
+    Quiero que sepas que mi amor por ti no vive de promesas vacías. Vive de intención, de constancia, de sentimientos reales. No te amo solo en los días bonitos; te amo también en los días largos, en los días cansados, en los días en los que el mundo pesa. Te amo con la paciencia de quien entiende, con la ternura de quien cuida, con la pasión de quien siente sin miedo.
+    </div>
 
-<div class="latido">❤</div>
+    <div class="parrafo">
+    Hay noches como esta en las que me pregunto cómo sería despertar a tu lado, compartir silencios, mirarte mientras duermes y pensar: “aquí es”. Imagino nuestras risas mezclándose con el paso del tiempo, nuestras manos encontrándose de forma natural, nuestros corazones aprendiendo a latir al mismo ritmo. Y no lo imagino como un sueño lejano, sino como una posibilidad hermosa que deseo construir contigo.
+    </div>
+
+    <div class="parrafo">
+    Esta noche quiero decirte que no eres una casualidad en mi vida. Eres una elección constante. Eres ese “sí” que mi corazón repite incluso cuando nadie escucha. Eres la calma que llega después del caos, la certeza en medio de la duda, la luz que no cansa de brillar.
+    </div>
+
+    <div class="parrafo">
+    A veces quisiera detener el tiempo solo para quedarme un poco más en los momentos contigo. Guardarlos, protegerlos, revivirlos cuando te extraño. Porque contigo incluso lo simple se vuelve especial, y lo cotidiano se transforma en algo digno de ser recordado.
+    </div>
+
+    <div class="parrafo">
+    Si alguna vez dudas, si alguna noche te sientes insegura o cansada, quiero que recuerdes esto: hay alguien que piensa en ti con amor profundo, que te lleva en el corazón incluso en la distancia, que cree en ti más de lo que imaginas. Alguien que te ama de una forma honesta, intensa y real.
+    </div>
+
+    <div class="parrafo">
+    Esta noche, mientras el mundo duerme, mi amor por ti permanece despierto. Late, insiste, crece. Y si las palabras pudieran abrazar, esta carta sería un abrazo largo, de esos que no quieren terminar, de esos que dicen “estoy aquí” sin necesidad de hablar.
+    </div>
+
+    <div class="parrafo">
+    No sé qué nos depare el futuro, pero sí sé lo que deseo: caminarlo contigo, paso a paso, sin prisa, sin miedo. Seguir eligiéndote, seguir amándote, seguir construyendo este sentimiento que ya es parte de mí.
+    </div>
+
+    <div class="parrafo">
+    Y cuando leas esto, tal vez bajo la misma noche que ahora me acompaña, quiero que sientas cuánto te amo, cuánto te pienso, cuánto te deseo en mi vida. Porque mi amor por ti no tiene hora, no tiene distancia, no tiene final.
+    </div>
+
+    <div class="firma">
+        Con todo mi corazón,<br>
+        con toda mi alma,<br>
+        con todo el amor que me habita,
+        <span>siempre para ti</span>
+    </div>
+
+</section>
+
+<script>
+const bloques = document.querySelectorAll('.parrafo');
+
+const mostrar = () => {
+  bloques.forEach(b => {
+    const top = b.getBoundingClientRect().top;
+    if(top < window.innerHeight - 80){
+        b.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', mostrar);
+mostrar();
+</script>
 
 </body>
-</html>
+        </html>
